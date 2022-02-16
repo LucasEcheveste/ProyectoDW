@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+
+body {
+/*    height: 100vh;*/
+    background-color: #fcfcfc;
+    color: #fff;
+}
+
+   
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+    padding-left: 2vw;
+}
+
+
+.cont-ul {
+    display: flex;
+	flex-direction: row;
+	width: 90%;
+	justify-content: flex-end;
+    
+}
+
+.sectionFlex{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border: 1px solid black;
+    height: 400px;
+	width: 800px;
+    padding: 5px;
+	align-items: stretch;
+	flex-wrap: wrap;
+	align-content: stretch;
+    /* gradiente */
+    background-image: linear-gradient(to bottom, rgb(250, 229, 229), rgb(245, 151, 135));
+}
+
+.container {
+    display: grid;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition:  all .3s ease 0s;
+}
+
+li:hover {
+    background-color: #161616;
+}
+
+.clients {
+    position: relative;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.ul-second > li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #fff ;
+    text-align: center;
+    background-color: #24252a;
+}
+
+.ul-second > li:hover {
+    background-color: #b7c0bd;
+}
+
+.clients:hover > .ul-second {
+    display: block;
+}
+
+.ul-third {
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top: 40%;
+    display: none;
+    background-color: #24252a;
+}
+
+.ul-third > li {
+    padding: 1.5vw;
+    border-bottom: solid 1px #fff;
+}
+
+.elaboracion:hover > .ul-third {
+    display: block;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.contenedor {
+    overflow: hidden;
+
+    
+}
+
+.item{
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin: 20px 20px 20px 20px;
+    
+}
+
+footer{
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #FFF;
+}
+
+.footer-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-contenido h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-contenido p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3 rem 0;
+}
+
+.sociales li{
+    margin: 0 10px;
+}
+
+.sociales a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.sociales a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.sociales a:hover i{
+    color: rgb(175, 248, 6);
+}
+
+
+.titulo{
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+
+.container {
+        display: grid;
+        grid-template-areas:
+            'header header header header'
+            'main main main main'
+            'main main main main'
+            'footer footer footer footer ';
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    header { 
+        grid-area: header;
+    
+    }
+    
+    main { 
+        grid-area: main; 
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+
+main {
+    width: auto;
+    margin: auto;
+}
+    
+/* MEDIA QUERIES */
+
+
+@media only screen and (max-width: 480px) {
+
+    nav {
+        flex-direction: column;
+    }
+    
+    
+    .cont-ul {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+}
+    
+@media only screen and (max-width: 768px) {
+    
+    nav {
+        flex-direction: column;
+    }
+    
+    
+    .cont-ul {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+}
+
+ 
+ /* animaciones */
+.item {
+    width: 100px;
+    transition: all 0.5s;
+    
+}
+
+ .item:hover {
+     width: 120px;
+     
+ }
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
